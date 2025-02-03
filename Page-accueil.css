@@ -175,10 +175,17 @@ header .corps-head .divhead{
   margin-top : 45px;
  }
  }
+ 
 header .corps-head .divfront{
  overflow: hidden;
  display: flex;
 }
+@media screen and (max-width : 449px) {
+  header .corps-head .divfront {
+  margin-top : 45px;
+ }
+ }
+
 header .corps-head .divcontact {
 border : 1px solid #fff;
 width : 22%;
@@ -191,7 +198,7 @@ overflow : hidden;
 }
 @media screen and (max-width : 449px) {
   header .corps-head .divcontact {
-  margin-top : 40%;
+  margin-top : 20%;
  }
  }
 
@@ -220,6 +227,11 @@ header .corps-head .divhead p:hover{
  top : 20px;
  transition : 1.3s;
 }
+@media screen and (max-width : 450px) {
+  header .corps-head .divhead p:hover{
+   top : -10px;
+ }
+ }
 
 @media screen and (max-width : 530px) {
  header .corps-head .divhead p{
@@ -229,8 +241,10 @@ header .corps-head .divhead p:hover{
 @media screen and (max-width : 450px) {
   header .corps-head .divhead p{
    font-size: 55px;
+   top : 10px;
  }
  }
+ 
 header .corps-head .divfront p{
  color : #fff;
  font-size: 135px;
@@ -246,6 +260,14 @@ header .corps-head .divfront p:hover{
  top : 20px;
  transition : 1.3s;
 }
+@media screen and (max-width : 450px) {
+  header .corps-head .divfront p:hover{
+ font-size: 80px;
+ top : 20px;
+ transition : 1.3s;
+ }
+ }
+
 @media screen and (max-width : 530px) {
  header .corps-head .divfront p{
   font-size: 110px;
@@ -254,15 +276,10 @@ header .corps-head .divfront p:hover{
 @media screen and (max-width : 450px) {
   header .corps-head .divfront p{
    font-size: 80px;
-   top : 25px;
+   top : 20px;
  }
  }
- @media screen and (max-width : 450px) {
-  header .corps-head .divfront p:hover{
-   font-size: 80px;
-   top : 15px;
- }
- }
+ 
 
 header .corps-head .divcontact span{
 font-family: "Quicksand", serif;
