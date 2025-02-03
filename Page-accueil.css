@@ -170,7 +170,11 @@ header .corps-head .divhead{
  overflow: hidden;
  display: flex;
 }
-
+@media screen and (max-width : 449px) {
+  header .corps-head .divhead {
+  margin-top : 45px;
+ }
+ }
 header .corps-head .divfront{
  overflow: hidden;
  display: flex;
@@ -187,7 +191,7 @@ overflow : hidden;
 }
 @media screen and (max-width : 449px) {
   header .corps-head .divcontact {
-  margin-top : 25%;
+  margin-top : 40%;
  }
  }
 
@@ -224,7 +228,7 @@ header .corps-head .divhead p:hover{
 }
 @media screen and (max-width : 450px) {
   header .corps-head .divhead p{
-   font-size: 75px;
+   font-size: 55px;
  }
  }
 header .corps-head .divfront p{
@@ -382,8 +386,8 @@ nav a{
 @media screen and (max-width : 450px){
   nav a {
    padding : 0px 2px; 
-   margin : 5px;
-   font-size: 12px;
+   margin : 1px;
+   font-size: 10px;
   }
  }
                                         /* SECTION GLOBALE */
