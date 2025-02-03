@@ -81,7 +81,12 @@ header .descript {
  top : 50%;
 }
 }
-
+@media screen and (max-width : 450px) {
+  header .descript {
+  left :-1%;
+  top : 35%;
+ }
+ }
 
 header .corps-head .descript p{
 writing-mode: vertical-lr;
@@ -102,7 +107,11 @@ header .corps-head {
  background-color: rgba(444, 888, 555, 0.3);
  background-size : cover;
 }
-
+@media screen and (max-width : 450px) {
+  header .corps-head {
+  height : 450px;
+ }
+ }
 
                               /* ANIMATION */ 
 .particle {
@@ -145,13 +154,15 @@ header .corps-head {
  margin-left : 5%;
 }
 }
- 
-/*@media screen and (max-width : 1414px) {
- .particle-js {
- width : 40px;
- height: 50px;
-}
-}*/
+@media screen and (max-width : 449px) {
+  .particle {
+  float: right;
+  width : 35%;
+  height : 100%;
+  margin-left : 5%;
+ }
+ }
+
                            /* DEVELOPEMENT - CREATEUR - CONTACT */
                                       /* BOITE */
                                       
@@ -174,10 +185,11 @@ text-align: center;
 border-radius: 45px;
 overflow : hidden;
 }
-/*@media screen and (max-width : 1363px) {
- header .corps-head .divcontact span{
-}
-}*/
+@media screen and (max-width : 449px) {
+  header .corps-head .divcontact {
+  margin-top : 25%;
+ }
+ }
 
                                  /* DEVELOPEMENT - CREATEUR - CONTACT */
                                               /* TEXTE */
@@ -204,11 +216,17 @@ header .corps-head .divhead p:hover{
  top : 20px;
  transition : 1.3s;
 }
+
 @media screen and (max-width : 530px) {
  header .corps-head .divhead p{
   font-size: 110px;
 }
 }
+@media screen and (max-width : 450px) {
+  header .corps-head .divhead p{
+   font-size: 75px;
+ }
+ }
 header .corps-head .divfront p{
  color : #fff;
  font-size: 135px;
@@ -229,6 +247,18 @@ header .corps-head .divfront p:hover{
   font-size: 110px;
 }
 }
+@media screen and (max-width : 450px) {
+  header .corps-head .divfront p{
+   font-size: 80px;
+   top : 25px;
+ }
+ }
+ @media screen and (max-width : 450px) {
+  header .corps-head .divfront p:hover{
+   font-size: 80px;
+   top : 15px;
+ }
+ }
 
 header .corps-head .divcontact span{
 font-family: "Quicksand", serif;
@@ -275,10 +305,11 @@ animation :  divcontact 8s linear infinite;
  font-size : 10px;
 }
 }
-/*ANIMATION */
-
-
-
+@media screen and (max-width : 450px) {
+  header .corps-head .divcontact span{
+  font-size : 10px;
+ }
+ }
 
 
                        /* BARRE DU MENU */
@@ -348,6 +379,13 @@ nav a{
   font-size: 13px;
  }
 }
+@media screen and (max-width : 450px){
+  nav a {
+   padding : 0px 2px; 
+   margin : 5px;
+   font-size: 12px;
+  }
+ }
                                         /* SECTION GLOBALE */
                                         
                               
