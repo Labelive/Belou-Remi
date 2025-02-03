@@ -1,0 +1,825 @@
+body{
+  font-family: "Libre Bodoni", serif;
+  font-style: normal;
+  margin: auto 0%;
+  padding: 0%;
+  display: flex;
+  background: url('img/zoe.jpg');
+  background-size: cover;
+}
+
+.reveal{                                /*JAVASCRIPT*/
+ opacity: 0;
+ transform: translateY(-30px);
+}
+.reveal-visible{
+ opacity: 1;
+ transform: translateY(0px);
+ transition : 4s; 
+}
+
+                                       /* ENTETE */ 
+
+header{
+ width: 100%;
+ display :inline-flex;
+ justify-content: center;
+ padding-bottom: 0%;
+}
+header .descript {
+ position: absolute;
+ margin : 0.5% 94% 0% 0%;
+ padding : 0%;
+ top : 48%;
+ left : 3%;
+}
+@media screen and (max-width : 1320px) {
+ header .descript {
+ left :2.5%;
+ top : 45%;
+}
+}
+@media screen and (max-width : 1000px) {
+ header .descript {
+ left :2.5%;
+ top : 42%;
+}
+}
+@media screen and (max-width : 990px) {
+ header .descript {
+ left :2%;
+ top : 40%;
+}
+}
+@media screen and (max-width : 930px) {
+ header .descript {
+ left :2%;
+ top : 40%;
+}
+}
+@media screen and (max-width : 780px) {
+ header .descript {
+ left :1%;
+ top : 40%;
+}
+}
+@media screen and (max-width : 610px) {
+ header .descript {
+ left :0%;
+ top : 40%;
+}
+}
+@media screen and (max-width : 543px) {
+ header .descript {
+ left :-1%;
+ top : 50%;
+}
+}
+@media screen and (max-width : 539px) {
+ header .descript {
+ left :-1%;
+ top : 50%;
+}
+}
+
+
+header .corps-head .descript p{
+writing-mode: vertical-lr;
+color: white;
+font-size: 15px;
+margin : 0%;
+position: relative;
+}
+
+
+                           /* DEVELOPEMENT - CREATEUR - CONTACT  */
+                                       /* DIV GENERAL */ 
+header .corps-head {
+ border-radius: 20px;
+ width: 100%;
+ margin : 80px 5% 30px 5%;
+ padding : 0% 0% 0% 5%;
+ background-color: rgba(444, 888, 555, 0.3);
+ background-size : cover;
+}
+
+
+                              /* ANIMATION */ 
+.particle {
+ border-radius: 20px;
+ float : right;
+ margin : 0%;
+ width : 60%;
+ height : 580px;
+}
+@media screen and (max-width : 1310px) {
+ .particle {
+ float : right;
+ margin : 0%;
+ width : 60%;
+ height : 580px;
+}
+}
+@media screen and (max-width : 1275px) {
+ .particle {
+ float : right;
+ margin : 0%;
+ width : 55%;
+ height : 540px;
+}
+}
+@media screen and (max-width : 1129px) {
+ .particle {
+ float : right;
+ margin : 0%;
+ width : 45%;
+ height : 530px;
+}
+}
+@media screen and (max-width : 930px) {
+ .particle {
+ float : right;
+ margin : 0%;
+ width : 105%;
+ height : 150px;
+ margin-left : 5%;
+}
+}
+ 
+/*@media screen and (max-width : 1414px) {
+ .particle-js {
+ width : 40px;
+ height: 50px;
+}
+}*/
+                           /* DEVELOPEMENT - CREATEUR - CONTACT */
+                                      /* BOITE */
+                                      
+header .corps-head .divhead{
+ overflow: hidden;
+ display: flex;
+}
+
+header .corps-head .divfront{
+ overflow: hidden;
+ display: flex;
+}
+header .corps-head .divcontact {
+border : 1px solid #fff;
+width : 22%;
+margin-top: 10%;
+margin-bottom: 4%;
+position: relative;
+text-align: center;
+border-radius: 45px;
+overflow : hidden;
+}
+/*@media screen and (max-width : 1363px) {
+ header .corps-head .divcontact span{
+}
+}*/
+
+                                 /* DEVELOPEMENT - CREATEUR - CONTACT */
+                                              /* TEXTE */
+
+header .corps-head p{
+ color : rgba(0, 0, 0, 0.5);
+ 
+}
+header .corps-head .divhead p{
+ color : #fff;
+ font-size: 135px;
+ font-family: "Six Caps", serif;
+ font-weight: 600;
+ font-style: normal;
+ display : flex;
+ position: relative;
+ top : 40px;
+ margin : 0%;
+ padding : 0%;
+ cursor: pointer;
+ transition : 1.3s;
+}
+header .corps-head .divhead p:hover{
+ top : 20px;
+ transition : 1.3s;
+}
+@media screen and (max-width : 530px) {
+ header .corps-head .divhead p{
+  font-size: 110px;
+}
+}
+header .corps-head .divfront p{
+ color : #fff;
+ font-size: 135px;
+ font-family: "Six Caps", serif;
+ display : inline-flex;
+ position: relative;
+ margin : 0%;
+ padding : 0%;
+ top : 40px;
+ transition : 1.3s;
+}
+header .corps-head .divfront p:hover{
+ top : 20px;
+ transition : 1.3s;
+}
+@media screen and (max-width : 530px) {
+ header .corps-head .divfront p{
+  font-size: 110px;
+}
+}
+
+header .corps-head .divcontact span{
+font-family: "Quicksand", serif;
+display: inline-block;
+position: relative;
+font-size: 30px;
+text-decoration: none;
+color : #fff;
+border-radius: 25px;
+padding : 2%;
+animation :  divcontact 8s linear infinite;
+}
+@keyframes divcontact {
+    0% { left: 100%; }
+    100% {left: -100%; }
+}
+@media screen and (max-width : 1363px) {
+ header .corps-head .divcontact span{
+ font-size : 25px;
+}
+}
+@media screen and (max-width : 1140px) {
+ header .corps-head .divcontact span{
+ font-size : 20px;
+}
+}
+@media screen and (max-width : 915px) {
+ header .corps-head .divcontact span{
+ font-size : 15px;
+}
+}
+@media screen and (max-width : 915px) {
+ header .corps-head .divcontact span{
+ font-size : 15px;
+}
+}
+@media screen and (max-width : 691px) {
+ header .corps-head .divcontact span{
+ font-size : 10px;
+}
+}
+@media screen and (max-width : 465px) {
+ header .corps-head .divcontact span{
+ font-size : 10px;
+}
+}
+/*ANIMATION */
+
+
+
+
+
+                       /* BARRE DU MENU */
+                       
+ .nav{                                
+  position: fixed;
+  font-family: "Quicksand", serif;
+  top : 20px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 30px;
+  z-index: 2;
+  transition : 1.3s;
+}
+.nav2{                                
+  position: fixed;
+  font-family: "Quicksand", serif;
+  top : 20px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgba(250, 128, 114, 0.5);
+  border-radius: 30px;
+  z-index: 2;
+  transition: 1.3s; 
+}
+
+
+nav ul{
+  float : right;
+  margin : 10px;
+  padding : 5px;
+  z-index: 2;
+}
+
+nav li{
+  list-style: none;
+  float : left;
+  z-index: 2;
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff ;
+  padding : 25px 20px; 
+  margin : 45px;
+}
+@media screen and (max-width : 1110px){
+ nav a {
+  padding : 10px 10px; 
+  margin : 30px;
+ }
+}
+@media screen and (max-width : 754px){
+ nav a {
+  padding : 10px 3px; 
+  margin : 20px;
+  font-size: 15px;
+ }
+}
+@media screen and (max-width : 550px){
+ nav a {
+  padding : 0px 3px; 
+  margin : 10px;
+  font-size: 13px;
+ }
+}
+                                        /* SECTION GLOBALE */
+                                        
+                              
+
+                                        /* SECTION 1 */
+  
+.section1 {
+ margin:0;
+ padding:1px;
+}
+                                
+.sect1h2 {
+  letter-spacing: 3vw;
+  margin-left: 8%;
+  color:  rgba(255, 246, 225, 0.80) ;
+  display: flex;
+}
+
+.corps-section1 {
+ display : flex;
+}
+
+.divsect1 {
+ width: 90%;
+ margin : 0% 5% 5% 5%;
+ border-radius : 25px;
+ padding : 1%;
+
+}
+.divsect1 p{
+ text-align: right;
+ font-size : 23px;
+ font-family: "Quicksand", serif;
+ color: #fff;
+ text-transform: uppercase;
+}
+@media screen and (max-width : 1000px) {
+ .divsect1 p {
+  font-size : 21px;
+ }
+}
+@media screen and (max-width : 650px) {
+ .divsect1 p {
+  font-size : 18px;
+ }
+}
+
+.bjr {
+ font-family: "Six Caps", serif;
+ font-size: 45px;
+ 
+}
+
+
+
+                                        /* SECTION 2 */
+                                      
+.section2{
+ width: 100%;
+ background-color : rgba(0, 0, 0, 0);
+ margin:0;
+ padding:1px;
+}
+
+                                      /* Titre */
+          
+.comp {    
+ letter-spacing: 3vw;
+ text-align: right;
+ margin-right: 5%;
+ color: #fef1df;
+}
+
+                                     /* competence proposé */
+
+.divsection2 {
+ display: flex;
+ padding-right : 5%;
+}
+@media screen and (max-width : 780px){
+ .divsection2 {
+  display : grid ;
+ }
+}
+
+
+.divcomp{
+ box-sizing : content-box;
+ width: 50%;
+ padding : 2% 0% 0% 0%;
+ margin : 5%;
+ border-radius : 20px;
+ background-color: rgba( 444, 888, 555, 0.3);
+ font-family: "Oswald", sans-serif;
+}
+@media screen and (max-width : 780px) {
+ .divcomp {
+  width: 95%;
+  text-align: left;
+ }
+}
+
+
+.section2 h3{
+ color : rgba(250, 128, 114, 1);
+ font-size: 40px;
+ font-family: "Libre Bodoni", serif;
+}
+@media screen and (max-width : 830px) {
+ .section2 h3{
+  font-size: 30px;
+}
+}
+.compleft{
+ margin : 0% 3%;
+ float: left;
+ font-size: 15px;
+ font-family: "Quicksand", serif;
+ text-decoration: blink;
+}
+
+
+.compmiddle{
+ margin : 3%;
+ float: left;
+ font-size: 15px;
+ font-family: "Quicksand", serif;
+ text-decoration: blink;
+}
+.compright{
+ margin : 3%;
+ float: left;
+ font-size: 15px;
+ font-family: "Quicksand", serif;
+ text-decoration: blink;
+}
+
+
+
+
+                                          /* Barre de pourcentage */
+           
+.divpour {
+ display: flex;
+ box-sizing: border-box;
+ width: 50%;
+ flex-direction: column;
+ border-radius : 25px;
+ margin-top : 5%;
+ margin-bottom : 5%;
+ background-color: rgba( 444, 888, 555, 0.3);
+ }
+ @media screen and (max-width : 780px) {
+ .divpour {
+  width: 95%;
+  margin-left: 5%;
+ }
+}
+
+.divpour p{
+ text-align: center;
+}
+.front {
+ background-color: rgba( 444, 888, 555, 0.6);
+ background-size: cover;
+ width : 65%;
+ margin : 10% auto 5% auto;
+ border-radius: 20px;
+ box-shadow : 2px 2px 7px ;
+}
+
+.back {
+ background-color: rgba( 444, 888, 555, 0.6);
+ width : 65%;
+ margin : 5% auto 5% auto;
+ border-radius: 20px;
+ box-shadow : 2px 2px 7px ;
+}
+.autre {
+ background-color: rgba( 444, 888, 555, 0.6);
+ width : 65%;
+ margin : 5% auto 5% auto;
+ border-radius: 20px;
+ box-shadow : 2px 2px 7px ;
+}
+
+
+.sep1 {
+ background-color : rgba(250, 128, 114, 0.4); 
+ border-radius : 20px;
+ margin : 5% 30% 0% 30%;
+ height: 2px;
+ position: relative;
+}
+@media screen and (max-width : 1150px) {
+ .sep1 {
+  margin-top : 30%;
+ }
+}
+@media screen and (max-width : 1000px) {
+ .sep1 {
+  margin-top : 35%;
+ }
+}
+@media screen and (max-width : 850px) {
+ .sep1 {
+  margin-top : 45%;
+ }
+}
+@media screen and (max-width : 780px) {
+ .sep1 {
+  margin-top : 5%;
+ }
+}
+.sep2 {
+ background-color : rgba(250, 128, 114, 0.4);
+ border-radius: 5px;
+ margin : 5% 30% 5% 30%;
+ height: 2px;
+ position: relative;
+}
+
+
+
+                          /* BOITE DE POURCENTAGE */
+                          
+.box {
+ width : 90%;
+ background-color: rgba( 444, 888, 555, 0.5);
+ margin : 5%;
+ overflow : hidden;
+ border-radius: 8px;
+}
+.barre {
+ text-align: right;
+}
+
+.html {
+ width : 75%;
+ background-color: rgba(250, 128, 114, 0.3);
+ animation : animation1 3s ease-in-out forwards;
+}
+.css {
+ width : 65%;
+ background-color: rgba(250, 128, 114, 0.3);
+ animation : animation2 3s ease-in-out forwards;
+ 
+}
+.java {
+ width : 45%;
+ background-color: rgba(250, 128, 114, 0.3);
+ animation : animation3 3s ease-in-out forwards;
+}
+
+.sql {
+ width : 50%;
+ background-color: rgba(250, 128, 114, 0.3);
+ animation : animation4 3s ease-in-out forwards;
+}
+.php {
+ width : 45%;
+ background-color: rgba(250, 128, 114, 0.3);
+ animation : animation3 3s ease-in-out forwards;
+}
+
+.presta {
+ width : 35%;
+ background-color: rgba(250, 128, 114, 0.3);
+ animation : animation5 3s ease-in-out forwards;
+}
+.adobe {
+ width : 45%;
+ background-color: rgba(250, 128, 114, 0.3);
+ animation : animation3 3s ease-in-out forwards;
+}
+
+@keyframes animation1 {
+ 0% {
+  width: 0%;
+ }
+ 100% {
+  width : 75%;
+ }
+}
+ @keyframes animation2 {
+ 0% {
+  width: 0%;
+ }
+ 100% {
+  width : 65%;
+ }
+}
+@keyframes animation3 {
+ 0% {
+  width: 0%;
+ }
+ 100% {
+  width : 45%;
+ }
+}
+@keyframes animation4 {
+ 0% {
+  width: 0%;
+ }
+ 100% {
+  width : 50%;
+ }
+}
+@keyframes animation5 {
+ 0% {
+  width: 0%;
+ }
+ 100% {
+  width : 35%;
+ }
+}
+
+
+                                        /* SECTION 3 */ 
+
+.section3 h1 {
+  color :   #fef1df;
+  margin-left: 8%;
+  letter-spacing: 3vw;
+}
+.section3 p {
+ text-align: center;
+ margin-top : 5%;
+ margin-bottom: 10%;
+ font-size: 1.1vw;
+}
+
+
+                                            /* SECTION 4, CONTACTEZ-MOI */ 
+
+
+.section4 {
+  font-family: "Quicksand", serif;
+  font-style: normal;
+  padding : 5%;
+  align-items: center;
+}
+
+form {
+ background-color: rgba( 444, 888, 555, 0.6);
+ border-radius : 25px;
+ margin : 0% 30% 0% 30%;
+ padding: 0.5% 0% 0% 0%;
+}
+
+form h1{
+text-align: center;
+color: rgba(0, 0, 0, 0.79);
+font-size: 45px;
+margin-bottom: 10%;
+}
+.separation2 {
+ background-color : rgba(250, 128, 114, 0.6);
+ margin-left: 25%;
+ margin-right: 25%;
+ margin-bottom: 5%;
+ height: 2px;
+ border-radius: 5px;
+}
+form .corps-formulaire {
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 30px;
+}
+
+form .corps-formulaire .groupe {
+ display: flex;
+ flex-direction: column;
+ padding: 5%;
+ position: relative;
+ margin: 2%;
+}
+
+ form .corps-formulaire .gauche .groupe input {
+  margin-top : 20px;
+  padding : 10px 0px 10px 35px;
+  border :  1px solid rgba(250, 128, 114, 0.6);
+  outline : none;
+  border-radius: 15px;
+ }
+ form .corps-formulaire .droite{
+  width: 45%;
+ }
+ form .corps-formulaire .droite .groupe{
+  height: 97%;
+  width: 100%;
+ }
+ form .corps-formulaire .droite .groupe textarea {
+  margin-top : 20px;
+  padding : 10px;
+  border :  2px solid rgba(250, 128, 114, 0.6);
+  border-radius: 15px;
+  outline : none;
+  resize: none;
+  height: 75%;
+ }
+
+ .divbutton {
+  text-align: center;
+ }
+.pied-formulaire button{
+ margin: 30px;
+ background-color: rgba(250, 128, 114, 0.6);
+ color : #fff;
+ font-size: 15px;
+ text-align: center;
+ border : none;
+ outline : none;
+ padding : 10px 20px;
+ border-radius: 20px;
+ cursor : pointer;
+ transition: transform 0.5s; 
+}
+
+.pied-formulaire button:hover{
+ transform: scale(1.05);
+}
+ 
+@media screen and (max-width : 1420px){
+  form .corps-formulaire .droite{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width : 1310px){
+  form .corps-formulaire .groupe {
+    flex-direction: column;
+    display: inline-flex;
+    width: 85%;
+    padding: 5%;
+    margin :2%;
+  }
+}
+@media screen and (max-width : 1310px){
+  form .corps-formulaire .droite .groupe {
+    flex-direction: column;
+    display: inline-flex;
+    width: 85%;
+    padding: 5%;
+    margin :2%;
+  }
+}
+@media screen and (max-width : 1310px){
+  form .corps-formulaire .droite {
+    flex-direction: column;
+    display: inline-flex;
+    width: 100%;
+    margin :2%;
+  }
+}
+@media screen and (max-width : 750px){
+  form {
+    margin : 0% 25% 0% 25%;
+  }
+}
+@media screen and (max-width : 605px){
+  form {
+    margin : 0% 20% 0% 20%;
+  }
+}
+
+.footer {
+  height: 80px;
+  text-align: center;
+}
+
+.footer p {
+  color : #fff;
+  font-size : 15px;
+}
