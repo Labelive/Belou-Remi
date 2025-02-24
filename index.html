@@ -193,7 +193,7 @@
             
             <section class='section4 reveal' id='ancre1'>
                    
-                <form method='post' action='traitement.PHP'>
+                <form method='post' action='traitement.php'>
                     <h1>Contact</h1>
                             
                         <div class='separation2'></div>
@@ -204,7 +204,7 @@
                                         
                                 <div class='groupe'>
                                     <label for='prenom'>Entrez votre prénom : </label>
-                                    <input type='text' name='prenom' id='prenom' required='required' maxlength='20'>
+                                    <input type='text' name='name' id='prenom' required='required' maxlength='20'>
                                     <span id='prenom-manquant'></span>
                                 </div>                                    
                                 <div class='groupe'>
@@ -220,14 +220,14 @@
                             <div class='droite'>
                                 <div class='groupe'>
                                     <label for='textelabel'>Message</label>
-                                    <textarea id='textelabel'></textarea>
+                                    <textarea name='message' id='textelabel'></textarea>
                                 </div>
                             </div>
                         </div>
 
                         <div class='pied-formulaire'> 
                             <div class='divbutton'>
-                                <button>Envoyer le message</button>
+                                <button type='submit' name='valider'>Envoyer le message</button>
                             </div>
                         </div>             
                 </form>
