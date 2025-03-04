@@ -1,6 +1,5 @@
 <?php
 
-
 $nom = $_POST['name'];
 $mail = $_POST['email'];
 $message = $_POST['message'];
