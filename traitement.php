@@ -28,7 +28,7 @@ try {
     $mail->Username   = 'remi.bl031@gmail.com';                     //SMTP username
     $mail->Password   = 'ikfjjsdlwrnpiwdw';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Port       = 587;   //465//                                 //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('from@example.com', 'Test');
